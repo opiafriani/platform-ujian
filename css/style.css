@@ -1,0 +1,145 @@
+
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #243247;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #ffffff;
+    padding: 18px 8%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #e5eaf1;
+}
+
+.logo {
+    background: #2563eb;
+    color: white;
+    padding: 10px 13px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo span {
+    color: #bfdbfe;
+}
+
+.school-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* KONTEN UTAMA */
+.container {
+    max-width: 1050px;
+    margin: auto;
+    padding: 60px 20px 25px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.label {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+
+.description {
+    color: #64748b;
+    line-height: 1.7;
+    max-width: 550px;
+    margin: auto;
+}
+
+/* KARTU MENU */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.menu-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #e5eaf1;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s;
+}
+
+.menu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+}
+
+.menu-icon {
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+.menu-card h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.menu-link {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-top: 65px;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 600px) {
+    .container {
+        padding-top: 40px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-card {
+        padding: 24px;
+    }
+}
