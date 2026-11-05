@@ -4,14 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Guru</title>
+    <title>Dashboard Guru - Platform Ujian</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <header class="navbar">
+        <div class="logo">PU<span>S</span></div>
+        <div class="school-name">Dashboard Guru</div>
+    </header>
+
     <main class="container">
-        <h1>Halaman Guru</h1>
-        <p>Halaman pengelolaan ujian akan dibuat pada tahap berikutnya.</p>
-        <p><a href="index.html">← Kembali ke Beranda</a></p>
+
+        <section class="dashboard-header">
+            <div>
+                <p class="label">AREA PENGELOLAAN</p>
+                <h1>Dashboard Guru</h1>
+                <p class="description">
+                    Kelola soal, buat ujian, dan pantau hasil belajar siswa.
+                </p>
+            </div>
+
+            <a href="index.html" class="back-link">
+                ← Beranda
+            </a>
+        </section>
+
+        <section class="summary">
+            <div class="summary-card">
+                <span class="summary-icon">📚</span>
+                <p>Total Ujian</p>
+                <h2>0</h2>
+            </div>
+
+            <div class="summary-card">
+                <span class="summary-icon">📝</span>
+                <p>Total Soal</p>
+                <h2>0</h2>
+            </div>
+
+            <div class="summary-card">
+                <span class="summary-icon">👨‍🎓</span>
+                <p>Peserta Ujian</p>
+                <h2>0</h2>
+            </div>
+        </section>
+
+        <h2 class="section-title">Menu Pengelolaan</h2>
+
+        <section class="dashboard-menu">
+
+            <div class="dashboard-card">
+                <div class="menu-icon">📥</div>
+                <h3>Impor Soal</h3>
+                <p>Unggah file soal hasil ekspor dari Google Forms.</p>
+                <button class="action-button" disabled>
+                    Segera Hadir
+                </button>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="menu-icon">📋</div>
+                <h3>Daftar Ujian</h3>
+                <p>Lihat dan kelola ujian yang telah dibuat.</p>
+                <button class="action-button" disabled>
+                    Segera Hadir
+                </button>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="menu-icon">📊</div>
+                <h3>Hasil Ujian</h3>
+                <p>Lihat nilai dan rekap hasil pengerjaan siswa.</p>
+                <button class="action-button" disabled>
+                    Segera Hadir
+                </button>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>© 2026 Platform Ujian Sekolah</p>
+            <p>Belajar • Berintegritas • Berprestasi</p>
+        </footer>
+
     </main>
+
 </body>
 </html>
